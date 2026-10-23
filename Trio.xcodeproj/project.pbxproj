@@ -1068,6 +1068,13 @@
 		CA0924000000000000000002 /* GRICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0924000000000000000001 /* GRICalculator.swift */; };
 		CA0924000000000000000004 /* GRIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0924000000000000000003 /* GRIView.swift */; };
 		CA0924000000000000000006 /* GRICalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0924000000000000000005 /* GRICalculatorTests.swift */; };
+		FDCD1C714B663E31763B3AA8 /* FoodCartModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF6E9B5D6D7AF991C87B2B2 /* FoodCartModels.swift */; };
+		FD966A63366F7B19D3A40656 /* FoodCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCD34785D190EDFA667E5A /* FoodCartView.swift */; };
+		FDC51D37B0567ADD617B7630 /* FoodAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFB85C484904DC47F85BB04 /* FoodAmountView.swift */; };
+		FD799209301F702EE5AC1127 /* AddFoodItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB409BCAB1280C65C52EEFB /* AddFoodItemView.swift */; };
+		FD2FE429700E8D333FAF4BBC /* FoodItemStored+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE06E9EE6AFB66496F1F04 /* FoodItemStored+CoreDataClass.swift */; };
+		FD829EBA578FD66A62A01DAA /* FoodItemStored+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1F9414B4CE582FD7D6855 /* FoodItemStored+CoreDataProperties.swift */; };
+		FD1F52441882CE5E306C33C9 /* FoodCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F3DAF7BCD731CA3608051 /* FoodCartTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2227,6 +2234,13 @@
 		CA0924000000000000000001 /* GRICalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRICalculator.swift; sourceTree = "<group>"; };
 		CA0924000000000000000003 /* GRIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRIView.swift; sourceTree = "<group>"; };
 		CA0924000000000000000005 /* GRICalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRICalculatorTests.swift; sourceTree = "<group>"; };
+		FDF6E9B5D6D7AF991C87B2B2 /* FoodCartModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCartModels.swift; sourceTree = "<group>"; };
+		FDCCD34785D190EDFA667E5A /* FoodCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCartView.swift; sourceTree = "<group>"; };
+		FDFB85C484904DC47F85BB04 /* FoodAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAmountView.swift; sourceTree = "<group>"; };
+		FDB409BCAB1280C65C52EEFB /* AddFoodItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodItemView.swift; sourceTree = "<group>"; };
+		FDEE06E9EE6AFB66496F1F04 /* FoodItemStored+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodItemStored+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FDB1F9414B4CE582FD7D6855 /* FoodItemStored+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodItemStored+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FD1F3DAF7BCD731CA3608051 /* FoodCartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCartTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -3469,6 +3483,7 @@
 				CA03000000000000000010C1 /* AlertCatalogRegistryOmniFaultTests.swift */,
 				CD1235A000000000000000F1 /* TidepoolUploadSerializerTests.swift */,
 				CE1425A000000000000000A1 /* CarbsEntryLoopKitTests.swift */,
+				FD1F3DAF7BCD731CA3608051 /* FoodCartTests.swift */,
 			);
 			path = TrioTests;
 			sourceTree = "<group>";
@@ -3859,6 +3874,7 @@
 				58237D9D2BCF0A6B00A47A79 /* PopupView.swift */,
 				BDB899872C564509006F3298 /* ForecastChart.swift */,
 				DD07CA5A2CE950B9002D45A9 /* MealPreset */,
+				FD3E9B3766377B30FD67AEFF /* FoodCart */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4385,6 +4401,17 @@
 			path = ISFEditor;
 			sourceTree = "<group>";
 		};
+		FD3E9B3766377B30FD67AEFF /* FoodCart */ = {
+			isa = PBXGroup;
+			children = (
+				FDF6E9B5D6D7AF991C87B2B2 /* FoodCartModels.swift */,
+				FDCCD34785D190EDFA667E5A /* FoodCartView.swift */,
+				FDFB85C484904DC47F85BB04 /* FoodAmountView.swift */,
+				FDB409BCAB1280C65C52EEFB /* AddFoodItemView.swift */,
+			);
+			path = FoodCart;
+			sourceTree = "<group>";
+		};
 		DD07CA5A2CE950B9002D45A9 /* MealPreset */ = {
 			isa = PBXGroup;
 			children = (
@@ -4860,6 +4887,8 @@
 				DDE179352C910127003CDDB7 /* LoopStatRecord+CoreDataProperties.swift */,
 				DDE179322C910127003CDDB7 /* MealPresetStored+CoreDataClass.swift */,
 				DDE179332C910127003CDDB7 /* MealPresetStored+CoreDataProperties.swift */,
+				FDEE06E9EE6AFB66496F1F04 /* FoodItemStored+CoreDataClass.swift */,
+				FDB1F9414B4CE582FD7D6855 /* FoodItemStored+CoreDataProperties.swift */,
 				DDE179462C910127003CDDB7 /* OpenAPS_Battery+CoreDataClass.swift */,
 				DDE179472C910127003CDDB7 /* OpenAPS_Battery+CoreDataProperties.swift */,
 				DDE1794E2C910127003CDDB7 /* OrefDetermination+CoreDataClass.swift */,
@@ -6188,6 +6217,12 @@
 				DDE179522C910127003CDDB7 /* MealPresetStored+CoreDataClass.swift in Sources */,
 				DD30B9CA2E062A3400DA677C /* ForecastGenerator.swift in Sources */,
 				DDE179532C910127003CDDB7 /* MealPresetStored+CoreDataProperties.swift in Sources */,
+				FDCD1C714B663E31763B3AA8 /* FoodCartModels.swift in Sources */,
+				FD966A63366F7B19D3A40656 /* FoodCartView.swift in Sources */,
+				FDC51D37B0567ADD617B7630 /* FoodAmountView.swift in Sources */,
+				FD799209301F702EE5AC1127 /* AddFoodItemView.swift in Sources */,
+				FD2FE429700E8D333FAF4BBC /* FoodItemStored+CoreDataClass.swift in Sources */,
+				FD829EBA578FD66A62A01DAA /* FoodItemStored+CoreDataProperties.swift in Sources */,
 				DDE179542C910127003CDDB7 /* LoopStatRecord+CoreDataClass.swift in Sources */,
 				BDC530FF2D0F6BE300088832 /* ContactImageManager.swift in Sources */,
 				BDC531122D1060FA00088832 /* ContactImageDetailView.swift in Sources */,
@@ -6352,6 +6387,7 @@
 				41740E936552456AAC0EDAC3 /* SettingsSearchTests.swift in Sources */,
 				B015AFF52E600000000D7351 /* AdjustmentManagerTests.swift in Sources */,
 				41740E936552456AAC0EDFC3 /* AlgorithmSuggestedBolusTests.swift in Sources */,
+				FD1F52441882CE5E306C33C9 /* FoodCartTests.swift in Sources */,
 				41740E936552456AAC0EDEC3 /* DosingModeClampTests.swift in Sources */,
 				41740E936552456AAC0EDDC3 /* LoopIndicatorTests.swift in Sources */,
 				41740E936552456AAC0EDCC3 /* MaxIOBSuggestionTests.swift in Sources */,

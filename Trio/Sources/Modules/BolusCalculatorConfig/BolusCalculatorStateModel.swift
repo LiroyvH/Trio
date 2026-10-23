@@ -9,6 +9,7 @@ extension BolusCalculatorConfig {
         @Published var sweetMeals: Bool = false
         @Published var sweetMealFactor: Decimal = 0
         @Published var displayPresets: Bool = true
+        @Published var useFoodCart: Bool = false
         @Published var confirmBolusWhenVeryLowGlucose: Bool = false
 
         override func subscribe() {
@@ -17,6 +18,7 @@ extension BolusCalculatorConfig {
             subscribeSetting(\.overrideFactor, on: $overrideFactor) { overrideFactor = $0 }
             subscribeSetting(\.fattyMeals, on: $fattyMeals) { fattyMeals = $0 }
             subscribeSetting(\.displayPresets, on: $displayPresets) { displayPresets = $0 }
+            subscribeSetting(\.useFoodCart, on: $useFoodCart) { useFoodCart = $0 }
             subscribeSetting(\.fattyMealFactor, on: $fattyMealFactor) { fattyMealFactor = $0 }
             subscribeSetting(\.sweetMeals, on: $sweetMeals) { sweetMeals = $0 }
             subscribeSetting(\.sweetMealFactor, on: $sweetMealFactor) { sweetMealFactor = $0 }

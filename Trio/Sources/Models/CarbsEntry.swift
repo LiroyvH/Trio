@@ -15,6 +15,9 @@ struct CarbsEntry: JSON, Equatable, Hashable, Identifiable {
     static let local = "Trio"
     static let appleHealth = "applehealth"
 
+    /// UI-only limit for the note field
+    static let maxNoteLength = 200
+
     static func == (lhs: CarbsEntry, rhs: CarbsEntry) -> Bool {
         lhs.createdAt == rhs.createdAt
     }

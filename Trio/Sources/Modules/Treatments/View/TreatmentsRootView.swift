@@ -427,7 +427,7 @@ extension Treatments {
                                     TextFieldWithToolBarString(
                                         text: $state.note,
                                         placeholder: String(localized: "Note..."),
-                                        maxLength: 25
+                                        maxLength: CarbsEntry.maxNoteLength
                                     )
                                 }
                             }.listRowBackground(Color.chart)
@@ -485,7 +485,7 @@ extension Treatments {
                             showPresetSheet = true
                         }, label: {
                             HStack {
-                                Text("Presets")
+                                Text(state.useFoodCart ? String(localized: "Food") : String(localized: "Presets"))
                                 Image(systemName: "plus")
                             }
                         })
@@ -517,7 +517,11 @@ extension Treatments {
             .sheet(isPresented: $showPresetSheet, onDismiss: {
                 showPresetSheet = false
             }) {
-                MealPresetView(state: state)
+                if state.useFoodCart {
+                    FoodCartView(state: state)
+                } else {
+                    MealPresetView(state: state)
+                }
             }
             .alert("Error while processing Treatment", isPresented: $state.showDeterminationFailureAlert) {
                 Button("OK", role: .cancel) {

@@ -54,6 +54,37 @@ extension BolusCalculatorConfig {
                     }
                 )
 
+                if state.displayPresets {
+                    SettingInputSection(
+                        decimalValue: $decimalPlaceholder,
+                        booleanValue: $state.useFoodCart,
+                        shouldDisplayHint: $shouldDisplayHint,
+                        selectedVerboseHint: Binding(
+                            get: { selectedVerboseHint },
+                            set: {
+                                selectedVerboseHint = $0.map { AnyView($0) }
+                                hintLabel = String(localized: "Food Database & Cart")
+                            }
+                        ),
+                        units: state.units,
+                        type: .boolean,
+                        label: String(localized: "Food Database & Cart"),
+                        miniHint: String(
+                            localized: "Build a meal from foods stored per amount, e.g. 30 g carbs per 100 g."
+                        ),
+                        verboseHint: VStack(alignment: .leading, spacing: 10) {
+                            Text("Default: OFF").bold()
+                            Text(
+                                "Replaces the preset meal list with a food database. For each food you store the nutrition per amount (for example 30 g carbs per 100 g) and a unit of your choice, such as grams, milliliters or cookies."
+                            )
+                            Text(
+                                "When you add a food to the cart, you enter how much you are eating or drinking and Trio calculates the carbs (and fat and protein, if enabled) for that amount. The cart total is rounded to whole grams and sent to the Treatments screen, with the list of foods added to the note."
+                            )
+                            Text("Your existing meal presets are not changed and are available again when this is turned off.")
+                        }
+                    )
+                }
+
                 SettingInputSection(
                     decimalValue: $state.overrideFactor,
                     booleanValue: $booleanPlaceholder,

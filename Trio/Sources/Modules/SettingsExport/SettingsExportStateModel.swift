@@ -645,6 +645,12 @@ extension SettingsExport {
                 addSetting(
                     category: featuresCategory,
                     subcategory: treatmentsSubcategory,
+                    name: String(localized: "Food Database & Cart"),
+                    value: trioSettings.useFoodCart ? String(localized: "Enabled") : String(localized: "Disabled")
+                )
+                addSetting(
+                    category: featuresCategory,
+                    subcategory: treatmentsSubcategory,
                     name: String(localized: "Recommended Bolus Percentage"),
                     value: String(format: "%.0f", (trioSettings.overrideFactor as NSDecimalNumber).doubleValue * 100),
                     unit: "%"
